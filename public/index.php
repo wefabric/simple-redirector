@@ -15,12 +15,11 @@ if(isset($_SERVER['HTTP_HOST'])) {
     $uri = str_replace(['-', '/'], '_', strtoupper(strtok($_SERVER["REQUEST_URI"], '?')));
 
     $redirect = $_ENV['DEFAULT_REDIRECT'].$_SERVER["REQUEST_URI"];
-
-    if(isset($_ENV[$host])) {
-        $redirect = $_ENV[$host];
-    }
-
-    if($uri !== '_') {
+    if($uri === '_') {
+        if(isset($_ENV[$host])) {
+            $redirect = $_ENV[$host];
+        }
+    } else {
         if(isset($_ENV[$host.$uri])) {
             $redirect = $_ENV[$host.$uri];
         }
