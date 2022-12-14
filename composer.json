@@ -1,0 +1,16 @@
+{
+  "name": "wefabric/dss-redirector",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Leo Flapper",
+      "email": "leo@wefabric.nl"
+    }
+  ],
+  "require": {
+    "symfony/var-dumper": "^6.0",
+    "vlucas/phpdotenv": "^5.5"
+  }
+}
