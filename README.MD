@@ -31,5 +31,10 @@ OLDWEBSITE_ABOUT_US.NL = The url to redirect from
 https://newwebsite.nl/about-us = The url to redirect to  
 {302} = The type of redirect. Either 301 or 302.  
 
+
+### Using the redirect
+Run the index.php file within the public directory.
+Add 'redirector_debug' to the query parameter to test the redirect (https://domain.com/?redirector_debug)
+
 #LICENSE
 Wefabric Simple Redirector is open-sourced software licensed under the MIT license.
